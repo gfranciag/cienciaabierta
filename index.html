@@ -12,36 +12,104 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
+  <header>
 
+    <nav>
+      <div class="nav-wrapper teal lighten-2">
+        <img class="responsive-img" width="58" src="https://gfranciag.github.io/camx/assets/img/log.png">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">¿Quienes somos</a></li>
+          <li><a href="badges.html">Proyectos</a></li>
+          <li><a href="collapsible.html">Publicaciones</a></li>
+          <li><a href="collapsible.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
   <body>
+    <main>
     <div class="container">
       <div class="row">
+        <img class="responsive-img" src="https://gfranciag.github.io/camx/assets/img/openrov.png">
         <div class="col m12">
         <h4>Introducción</h4>
           <p>Somos un Colectivo conformado por un grupo de investigadores, nuestro propósito es promover entre las Instituciones de Educación Superior y en la sociedad civil el uso y aprovechamiento de los estándares de la Iniciativa Internacional de la Ciencia Abierta como son: el desarrollo de prácticas que mejoran la eficiencia, el acceso, la colaboración, del proceso de investigación, así como la divulgación y la apropiación ciudadana de la ciencia.</p>
           
           </div>
         <div class="col m6">
-          <h4>Proyectos</h4>
+          <h4>Objetivos</h4>
           <div class="divider"></div>
           <div class="section">
-            <h5>Proyectos</h5>
-            <p>Stuff</p>
-          </div>
+            <ul class="collection">
+              <li class="collection-item">Promover el conocimiento como bien común.</li>
+              <li class="collection-item">Integrar diferentes tradiciones científicas y formas de saber.</li>
+              <li class="collection-item">Atender el rol que tiene el poder y la desigualdad en la producción y distribución de conocimiento.</li>
+              <li class="collection-item">Crear oportunidades para la participación en todas las etapas del proceso de investigación.</li>
+            </ul>
           <div class="divider"></div>
         </div>
-        <div class="col m6">6-columns (one-half)</div>
       </div>
-
-
+        <div class="col m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://gfranciag.github.io/camx/assets/img/proyecto2.png">
+              <span class="card-title">Cartografía digital</span>
+            </div>
+            <div class="card-content">
+              <p>Modelo tridimensional del lecho marino, evidencia de materiales culturales en el fondo.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Leer más ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
+  
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Animate On Scroll Library-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-
+    </main>
+    <footer class="page-footer teal lighten-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Ciencia Abierta Lab MX</h5>
+            <p class="grey-text text-lighten-4">Colectivo social por la democratización de la ciencia en México</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Más ... </h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Participación social</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Divulgación</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Invitanos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright teal lighten-1">
+        <div class="container">
+        2021 Creative Commons
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
   </body>
+
   <script>AOS.init();</script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  </script>
 </html>
